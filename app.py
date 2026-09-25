@@ -131,7 +131,7 @@ if st.button("Run Agent"):
                         messages=messages,
                         response_format={"type": "json_object"},
                         temperature=0.2,
-                        max_tokens=1024,
+                        max_tokens=800,
                         extra_body={"disable_tool_validation": True}
                     )
                 except Exception as e:
