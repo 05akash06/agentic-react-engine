@@ -164,8 +164,7 @@ if st.button("Run Agent"):
                 if action in tools:
                     st.markdown(f"**🛠️ Executing Tool:** `{action}` | **Input:** `{action_input}`")
                     tool_result = tools[action](action_input)
-                    st.text_area("👁️ Observation", tool_result, height=100)
-
+                    st.text_area("👁️ Observation", tool_result, height=100, key=f"observation_{step}")
                     messages.append({"role": "assistant", "content": json.dumps(output)})
                     messages.append({"role": "user", "content": f"Observation from {action}: {tool_result}"})
                 else:
