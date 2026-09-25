@@ -1,5 +1,4 @@
-groq
-streamlit
-duckduckgo-search
+streamlit 
+groq 
+duckduckgo-search 
 python-dotenv
-pandaspython-dotenv 
